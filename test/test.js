@@ -9,7 +9,7 @@ describe('기본 시험', () => {
 
   it('setDataLimit 시험', async () => {
     const result = await adaptRouter.default.setDataLimit({
-      model: 'CNR-M100',
+      model: 'CNR-M100C',
       serial: '601288',
       limit: '10000',
     });
@@ -18,7 +18,7 @@ describe('기본 시험', () => {
 
   it('rebootRouter 시험', async () => {
     const result = await adaptRouter.default.rebootRouter({
-      model: 'CNR-M100',
+      model: 'CNR-M100C',
       serial: '601289',
     });
     console.log('result:', result.data);
