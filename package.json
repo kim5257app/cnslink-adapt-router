@@ -1,7 +1,7 @@
 {
-  "name": "@kim5257/polling-comm",
-  "version": "0.0.5",
-  "description": "Long Polling Communication Module",
+  "name": "@kim5257/cnslink-adapt-router",
+  "version": "0.0.1",
+  "description": "CNSLINK Router API adaptor",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
