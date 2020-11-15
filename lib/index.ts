@@ -67,7 +67,32 @@ function setDataLimit(args: {
   });
 }
 
+function rebootRouter(args: {
+  model: string,
+  serial: string
+}): Promise<AxiosResponse> {
+  const req: AxiosRequestConfig = {
+    url: `${urlFormat(rmsServer)}/rms_router/doReboot`,
+    method: 'post',
+    timeout: 3000,
+    headers: {
+      'Content-Type': 'application/x-www-urlencoded',
+    },
+    data: qs.stringify(args),
+  };
+
+  const beginTime = new Date().getTime();
+
+  return Axios(req).then((response) => (response)).catch((error) => {
+    throw Error.make(error);
+  }).finally(() => {
+    const current = new Date().getTime();
+    debug(`Response Time(${req.url}):`, current - beginTime);
+  });
+}
+
 export default {
   checkRouter,
   setDataLimit,
+  rebootRouter,
 }

@@ -5,8 +5,13 @@ declare function setDataLimit(args: {
     serial: string;
     limit: number;
 }): Promise<AxiosResponse<any>>;
+declare function rebootRouter(args: {
+    model: string;
+    serial: string;
+}): Promise<AxiosResponse>;
 declare const _default: {
     checkRouter: typeof checkRouter;
     setDataLimit: typeof setDataLimit;
+    rebootRouter: typeof rebootRouter;
 };
 export default _default;
