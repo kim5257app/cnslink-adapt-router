@@ -1,5 +1,5 @@
 {
-  "name": "@kim5257/cnslink-adapt-router",
+  "name": "@kim5257app/cnslink-adapt-router",
   "version": "0.0.2",
   "description": "CNSLINK Router API adaptor",
   "main": "dist/index.js",
