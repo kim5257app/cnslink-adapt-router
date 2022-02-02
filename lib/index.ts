@@ -1,7 +1,7 @@
 import Debug from 'debug';
 import Axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 import * as qs from 'qs';
-import Error from '@kim5257/js-error';
+import Error from '@kim5257app/js-error';
 
 const debug = Debug('cnslink-adapt-router');
 

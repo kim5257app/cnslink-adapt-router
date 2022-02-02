@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const debug_1 = require("debug");
 const axios_1 = require("axios");
 const qs = require("qs");
-const js_error_1 = require("@kim5257/js-error");
+const js_error_1 = require("@kim5257app/js-error");
 const debug = debug_1.default('cnslink-adapt-router');
 const rmsServer = {
     hostname: '1.215.228.83',
